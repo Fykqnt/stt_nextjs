@@ -7,7 +7,8 @@
     "build:server": "tsc -p tsconfig.server.json",
     "dev": "npm run build:server && node dist/server.js",
     "build": "next build",
-    "start": "NODE_ENV=production npm run build:server && node dist/server.js"
+    "start": "NODE_ENV=production npm run build:server && node dist/server.js",
+    "dev:speech": "GOOGLE_APPLICATION_CREDENTIALS=./path/to/credentials.json npm run dev"
   },
   "dependencies": {
     "@google-cloud/speech": "^6.7.0",
